@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
+        <a href="#home" class="logo">
             <img src="images/CK logo.png" alt="CK Logo" class="logo-img">
-        </div>
+        </a>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -246,6 +246,7 @@
         // Hamburger menu functionality
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
+        const logo = document.querySelector('.logo');
         
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
@@ -258,6 +259,12 @@
                 navLinks.classList.remove('active');
                 hamburger.classList.remove('active');
             });
+        });
+        
+        // Close menu when clicking on logo
+        logo.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
         });
     </script>
 </body>
