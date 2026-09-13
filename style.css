@@ -643,6 +643,11 @@ nav {
         line-height: 1.6;
     }
     
+    .hero {
+        padding: 4rem 5% 3rem;
+        min-height: 70vh;
+    }
+    
     .info-cards {
         grid-template-columns: 1fr;
     }
