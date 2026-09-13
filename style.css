@@ -576,6 +576,10 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        margin-left: -1rem;
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -624,8 +628,9 @@ nav {
     }
     
     .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0.1rem;
     }
     
     .info-cards {
