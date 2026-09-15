@@ -12,12 +12,13 @@
         <div class="logo">
             <img src="images/CK logo.png" alt="CK Logo" class="logo-img">
         </div>
-        <div class="hamburger" id="hamburger">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-        <ul class="nav-links" id="navLinks">
+        </label>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -202,7 +203,7 @@
                     
                     <div class="social-links">
                         <a href="https://github.com/calebstudio9" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/caleb-koffie-b53813392" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
@@ -233,32 +234,13 @@
     
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">&copy; 2026 My Portfolio. All rights reserved.</p>
+            <p class="footer-text">&copy; 2026 Caleb Koffie. All rights reserved.</p>
             <div class="footer-social">
                 <a href="https://github.com/calebstudio9" target="_blank" class="footer-social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/caleb-koffie-b53813392" target="_blank" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
                 <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
-    
-    <script>
-        // Hamburger menu functionality
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on a link
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>
